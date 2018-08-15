@@ -1,1 +1,17 @@
 ######Description#########
+
+安装git：apt-get install git
+
+配置gitconfig
+	git config --global user.name ""
+	git config --global user.email ""
+生成sshkey：
+	ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
+
+将生成key加入gerrit
+
+安装repo：git clone https://gerrit-googlesource.lug.ustc.edu.cn/git-repo
+
+获取完之后copy repo到环境变量；有墙情况下，在下载源代码路径创建.repo/repo，并将下载文件移入此目录。
+
+以上即可下载代码
